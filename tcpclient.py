@@ -2,7 +2,7 @@ import socket
 print("We're in tcp client...");
 
 #the server name and port client wishes to access
-server_name = 'localhost'
+server_name = '18.208.147.99'
 server_port = 12000
 #create a TCP client socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

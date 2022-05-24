@@ -1,7 +1,7 @@
 import socket
 
 #the server name and port client wishes to access
-server_name = 'localhost'
+server_name = '54.234.212.35'
 server_port = 12000
 my_port=13000
 #create a UDP client socket
