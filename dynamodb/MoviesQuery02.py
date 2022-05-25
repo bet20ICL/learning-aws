@@ -12,8 +12,8 @@ def query_and_project_movies(year, title_range, dynamodb=None):
 
     # Expression attribute names can only reference items in the projection expression.
     response = table.query(
-        ProjectionExpression="#yr, title, info.genres, info.actors[0]",
-        ExpressionAttributeNames={"#yr": "year"},
+        # ProjectionExpression="#yr, title, info.genres, info.actors[0]",
+        # ExpressionAttributeNames={"#yr": "year"},
         KeyConditionExpression=
             Key('year').eq(year) & Key('title').between(title_range[0], title_range[1])
     )
